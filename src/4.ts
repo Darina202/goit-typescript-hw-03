@@ -6,9 +6,7 @@ class Key {
 }
 
 class Person {
-  constructor(private key: Key) {
-    this.key = key;
-  }
+  constructor(private key: Key) {}
   getKey(): Key {
     return this.key;
   }
@@ -20,7 +18,6 @@ abstract class House {
 
   constructor(protected key: Key) {
     this.door = false;
-    this.key = key;
     this.tenants = [];
   }
 
